@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_chicago_taxi
+    description: "Промежуточная стейдж-модель: отбираем нужные поля за 2018 год."
+    columns:
+      - name: taxi_id
+        description: "ID такси"
+      - name: trip_start_timestamp
+        description: "Время начала поездки (timestamp)"
+      - name: trip_date
+        description: "Дата начала поездки (date)"
+      - name: trip_end_timestamp
+        description: "Время окончания поездки"
+      - name: trip_miles
+        description: "Мили за поездку"
+      - name: fare
+        description: "Стоимость поездки (без чаевых)"
+      - name: tips
+        description: "Чаевые"
