@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: chicago_taxi_trips_source
+    description: "Публичный датасет о поездках на такси в Чикаго"
+    database: bigquery-public-data     # Проект, где лежат public datasets
+    schema: chicago_taxi_trips         # Название датасета
+    tables:
+      - name: taxi_trips
+        identifier: taxi_trips
+        description: "Информация о поездках (старт, конец, чаевые, плата и т.д.)"
+        columns:
+          - name: taxi_id
+            description: "Идентификатор такси"
+          - name: trip_start_timestamp
+            description: "Дата и время начала поездки"
+          - name: trip_end_timestamp
+            description: "Дата и время окончания поездки"
+          - name: tips
+            description: "Сумма чаевых"
+          - name: fare
+            description: "Стоимость поездки (не включая чаевые)"
+          - name: payment_type
+            description: "Тип оплаты (Cash, Credit Card и т.д.)"
+          - name: trip_miles
+            description: "Пройденное расстояние"
+          - name: trip_seconds
+            description: "Продолжительность поездки в секундах"

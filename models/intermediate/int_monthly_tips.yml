@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_monthly_tips
+    description: "Сумма чаевых по (taxi_id, месяц) за 2018 год."
+    columns:
+      - name: taxi_id
+        description: "ID такси"
+      - name: year_month
+        description: "Месяц (YYYY-MM)"
+      - name: tips_sum
+        description: "Сумма чаевых в этом месяце"

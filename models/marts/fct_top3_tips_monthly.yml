@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fct_top3_tips_monthly
+    description: "Финальная витрина: топ-3 машин (по чаевым в апреле 2018), динамика чаевых по месяцам"
+    columns:
+      - name: taxi_id
+        description: "ID такси (только топ-3 за апрель 2018)"
+      - name: year_month
+        description: "Месяц в формате YYYY-MM"
+      - name: tips_sum
+        description: "Суммарные чаевые за месяц"
+      - name: tips_change
+        description: "Изменение чаевых (%) относительно предыдущего месяца"
